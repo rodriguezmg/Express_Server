@@ -3,19 +3,15 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-    res.send('Home')
+    res.send('Hello World of Express!')
 })
 
-app.get('/contact', (req, res) => {
-    res.send('Contáctanos')
+app.get('/about', (req, res) => {
+    res.send('This is a small Express project :)')
 })
 
-app.get('/products', (req, res) => {
-    res.send('Productos')
-})
-
-app.get('/products/abc123', (req, res) => {
-    res.send('Producto abc123')
+app.get('/contact-us', (req, res) => {
+    res.send('My email is geiner.rodriguez.mora@ucreativa.com')
 })
 
 app.listen(port, () => {
